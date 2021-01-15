@@ -26,6 +26,30 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <profiles>
+	<profile>
+		<id>github</id>
+		<repositories>
+			<repository>
+				<id>central</id>
+				<url>https://repo1.maven.org/maven2</url>
+				<releases>
+					<enabled>true</enabled>
+				</releases>
+				<snapshots>
+					<enabled>false</enabled>
+				</snapshots>
+			</repository>
+			<repository>
+				<id>github</id>
+				<name>GitHub jmmartinez12</name>
+				<url>https://github.com/jmmartinez12/calidaddelsoftware</url>
+			</repository>
+		</repositories>
+	</profile>
+	</profiles>
+			
+  
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
